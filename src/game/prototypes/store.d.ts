@@ -1,5 +1,5 @@
 declare module 'game/prototypes/store' {
-  type ResourceType = string // TODO: develop resource type
+  export type ResourceType = string // TODO: develop resource type
 
   /** An object that class contain resources in its cargo */
   export type Store = {

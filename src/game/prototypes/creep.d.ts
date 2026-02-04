@@ -27,7 +27,7 @@ declare module 'game/prototypes/creep' {
   import { Source } from 'game/prototypes/source'
   import { Store } from 'game/prototypes/store'
 
-  type BodyPartType =
+  export type BodyPartType =
     | typeof ATTACK
     | typeof CARRY
     | typeof HEAL

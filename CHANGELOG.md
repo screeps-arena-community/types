@@ -36,5 +36,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Package exports for tree-shaking support
 - Full documentation and usage examples
 
-[1.0.1]: https://github.com/screeps-arena/types/compare/v1.0.0...v1.0.1
-[1.0.0]: https://github.com/screeps-arena/types/releases/tag/v1.0.0
+[1.0.1]: https://github.com/screeps-arena-community/types/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/screeps-arena-community/types/releases/tag/v1.0.0
