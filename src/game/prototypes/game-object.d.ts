@@ -4,7 +4,7 @@ declare module 'game/prototypes/game-object' {
   import { findPath } from 'game/utils' // eslint-disable-line @typescript-eslint/no-unused-vars
 
   /** Position of object in the room */
-  export type Position = {
+  export interface Position {
     /** The X coordinate in the room */
     x: number
 
@@ -12,7 +12,7 @@ declare module 'game/prototypes/game-object' {
     y: number
   }
 
-  export type EffectData = {
+  export interface EffectData {
     /** The effect multiplier */
     multiplier: number
   }
@@ -29,7 +29,7 @@ declare module 'game/prototypes/game-object' {
    * Basic prototype for game objects.
    * All objects and classes are inherited from this class
    */
-  export class GameObject extends Position {
+  export class GameObject implements Position {
     /** true if this object is live in the game at the moment */
     exists: boolean
 

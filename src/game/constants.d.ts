@@ -39,7 +39,7 @@ declare module 'game/constants' {
   export const BODYPART_HITS = 100
 
   export const RANGED_ATTACK_POWER = 10
-  export const RANGED_ATTACK_DISTANCE_RATE
+  export const RANGED_ATTACK_DISTANCE_RATE: Record<number, number>
   export const ATTACK_POWER = 30
   export const HEAL_POWER = 12
   export const RANGED_HEAL_POWER = 4
@@ -51,7 +51,7 @@ declare module 'game/constants' {
   export const HARVEST_POWER = 2
   export const BUILD_POWER = 5
 
-  export const OBSTACLE_OBJECT_TYPES
+  export const OBSTACLE_OBJECT_TYPES: string[]
 
   export const TOWER_ENERGY_COST = 10
   export const TOWER_RANGE = 20
@@ -65,13 +65,13 @@ declare module 'game/constants' {
   export const TOWER_FALLOFF = 1
   export const TOWER_COOLDOWN = 10
 
-  export const BODYPART_COST
+  export const BODYPART_COST: Record<string, number>
 
   export const MAX_CREEP_SIZE = 50
   export const CREEP_SPAWN_TIME = 3
 
   export const RESOURCE_ENERGY = 'energy'
-  export const RESOURCES_ALL
+  export const RESOURCES_ALL: string[]
 
   export const SOURCE_ENERGY_REGEN = 10
 
@@ -79,8 +79,8 @@ declare module 'game/constants' {
 
   export const MAX_CONSTRUCTION_SITES = 10
 
-  export const CONSTRUCTION_COST
-  export const STRUCTURE_PROTOTYPES
+  export const CONSTRUCTION_COST: Record<string, number>
+  export const STRUCTURE_PROTOTYPES: Record<string, unknown>
 
   export const CONSTRUCTION_COST_ROAD_SWAMP_RATIO = 5
   export const CONSTRUCTION_COST_ROAD_WALL_RATIO = 150

@@ -15,12 +15,12 @@ declare module 'game/prototypes/creep' {
     HEAL,
     MOVE,
     RANGED_ATTACK,
+    TOUGH,
     WORK,
   } from 'game/constants'
 
   import { findPath } from 'game/utils'
-  import { Position } from 'game/utils'
-  import { GameObject } from 'game/prototypes/game-object'
+  import { GameObject, Position } from 'game/prototypes/game-object'
   import { Structure } from 'game/prototypes/structure'
   import { ConstructionSite } from 'game/prototypes/construction-site'
   import { Resource, ResourceType } from 'game/prototypes/resource'

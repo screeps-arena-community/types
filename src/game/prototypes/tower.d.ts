@@ -8,6 +8,8 @@ declare module 'game/prototypes/tower' {
   } from 'game/constants'
   import { OwnedStructure } from 'game/prototypes/owned-structure'
   import { Store } from 'game/prototypes/store'
+  import { Creep } from 'game/prototypes/creep'
+  import { Structure } from 'game/prototypes/structure'
 
   type TowerAttackResult =
     | typeof OK

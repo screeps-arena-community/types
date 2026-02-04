@@ -1,0 +1,15 @@
+﻿{
+  "name": "test-package",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Integration test for @screeps-arena-community/types package",
+  "scripts": {
+    "test": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@screeps-arena-community/types": "file:.."
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
