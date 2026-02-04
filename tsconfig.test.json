@@ -1,0 +1,11 @@
+﻿{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "paths": {
+      "game/*": ["./src/game/*"],
+      "arena/*": ["./src/arena/*"]
+    }
+  },
+  "include": ["tests/**/*.ts", "src/**/*.d.ts"]
+}

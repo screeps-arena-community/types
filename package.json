@@ -1,0 +1,59 @@
+{
+  "name": "@screeps-arena-community/types",
+  "version": "1.0.0",
+  "description": "TypeScript type definitions for Screeps Arena",
+  "main": "src/index.d.ts",
+  "types": "src/index.d.ts",
+  "exports": {
+    ".": "./src/index.d.ts",
+    "./game": "./src/game/index.d.ts",
+    "./game/*": "./src/game/*.d.ts",
+    "./arena/season_1/construct_and_control": "./src/arena/season_1/construct_and_control/index.d.ts",
+    "./arena/season_1/construct_and_control/*": "./src/arena/season_1/construct_and_control/*.d.ts",
+    "./arena/season_1/portal_exploration": "./src/arena/season_1/portal_exploration/index.d.ts",
+    "./arena/season_1/portal_exploration/*": "./src/arena/season_1/portal_exploration/*.d.ts",
+    "./arena/season_2/capture_the_flag": "./src/arena/season_2/capture_the_flag/index.d.ts",
+    "./arena/season_2/capture_the_flag/*": "./src/arena/season_2/capture_the_flag/*.d.ts",
+    "./arena/season_2/power_split": "./src/arena/season_2/power_split/index.d.ts",
+    "./arena/season_2/power_split/*": "./src/arena/season_2/power_split/*.d.ts"
+  },
+  "files": [
+    "src/**/*.d.ts",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "tsc --project tsconfig.test.json",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "screeps",
+    "screeps-arena",
+    "screeps-arena-community",
+    "screeps-arena-types",
+    "screeps-arena-community-types",
+    "screeps-arena-definitions"
+  ],
+  "author": "Kreash <kreash.dev@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/screeps-arena-community/types.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "bugs": {
+    "url": "https://github.com/screeps-arena-community/types/issues"
+  },
+  "homepage": "https://github.com/screeps-arena-community/types#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "prettier": "3.8.1",
+    "typescript": "^5.0.0"
+  }
+}

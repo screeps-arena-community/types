@@ -1,0 +1,23 @@
+﻿# Development files
+tests/
+tsconfig.test.json
+.editorconfig
+.gitignore
+.gitattributes
+
+# Git
+.git
+.github/
+
+# IDE
+.vscode/
+.idea/
+
+# CI/CD
+.travis.yml
+.circleci/
+.github/
+
+# Misc
+*.log
+.DS_Store
