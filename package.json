@@ -1,22 +1,9 @@
-{
+﻿{
   "name": "@screeps-arena-community/types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TypeScript type definitions for Screeps Arena",
   "main": "src/index.d.ts",
   "types": "src/index.d.ts",
-  "exports": {
-    ".": "./src/index.d.ts",
-    "./game": "./src/game/index.d.ts",
-    "./game/*": "./src/game/*.d.ts",
-    "./arena/season_1/construct_and_control": "./src/arena/season_1/construct_and_control/index.d.ts",
-    "./arena/season_1/construct_and_control/*": "./src/arena/season_1/construct_and_control/*.d.ts",
-    "./arena/season_1/portal_exploration": "./src/arena/season_1/portal_exploration/index.d.ts",
-    "./arena/season_1/portal_exploration/*": "./src/arena/season_1/portal_exploration/*.d.ts",
-    "./arena/season_2/capture_the_flag": "./src/arena/season_2/capture_the_flag/index.d.ts",
-    "./arena/season_2/capture_the_flag/*": "./src/arena/season_2/capture_the_flag/*.d.ts",
-    "./arena/season_2/power_split": "./src/arena/season_2/power_split/index.d.ts",
-    "./arena/season_2/power_split/*": "./src/arena/season_2/power_split/*.d.ts"
-  },
   "files": [
     "src/**/*.d.ts",
     "README.md",

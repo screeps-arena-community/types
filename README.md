@@ -1,6 +1,6 @@
 ﻿# @screeps-arena-community/types
 
-Typescript types for the game [Screeps Arena](https://store.steampowered.com/app/1137320/Screeps_Arena) based on the official [Screeps Arena Docs](https://arena.screeps.com/docs).
+TypeScript type definitions for [Screeps Arena](https://store.steampowered.com/app/1137320/Screeps_Arena/).
 
 [![npm version](https://img.shields.io/npm/v/@screeps-arena-community/types.svg)](https://www.npmjs.com/package/@screeps-arena-community/types)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -19,26 +19,14 @@ Add the package to your `tsconfig.json`:
 {
   "compilerOptions": {
     "types": ["@screeps-arena-community/types"],
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "module": "ESNext",
     "target": "ES2020"
   }
 }
 ```
 
-For custom path mappings (optional):
-
-```json
-{
-  "compilerOptions": {
-    "types": ["@screeps-arena-community/types"],
-    "paths": {
-      "game/*": ["node_modules/@screeps-arena-community/types/src/game/*"],
-      "arena/*": ["node_modules/@screeps-arena-community/types/src/arena/*"]
-    }
-  }
-}
-```
+**That's it!** No additional configuration needed.
 
 ## Usage
 
@@ -47,9 +35,8 @@ For custom path mappings (optional):
 The core game API is available for all arena modes:
 
 ```typescript
-import { Creep, Structure } from 'game/prototypes'
-import { getObjectsByPrototype, getRange } from 'game/utils'
-import { searchPath } from 'game/path-finder'
+import { Creep, Spawn } from 'game/prototypes'
+import { getObjectsByPrototype } from 'game/utils'
 import { ATTACK, MOVE, HEAL } from 'game/constants'
 
 export function loop() {
@@ -57,6 +44,8 @@ export function loop() {
   // Your game logic here...
 }
 ```
+
+**Note:** Import from module paths (e.g., `"game/prototypes"`), not from the npm package directly.
 
 ### Season-Specific Types
 
@@ -118,7 +107,7 @@ export function loop() {
 ## Package Structure
 
 ```
-@screeps-arena/types/
+@screeps-arena-community/types/
 ├── src/
 │   ├── index.d.ts              # Main entry (core game types)
 │   ├── game/                   # Core game API
