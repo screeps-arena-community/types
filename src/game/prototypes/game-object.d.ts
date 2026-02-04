@@ -1,5 +1,3 @@
-import { SearchPathOptions } from '../path-finder'
-
 declare module 'game/prototypes/game-object' {
   import { getObjectById, FindPathOptions } from 'game/utils'
 
