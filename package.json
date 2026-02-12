@@ -1,6 +1,6 @@
 ﻿{
   "name": "@screeps-arena-community/types",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "TypeScript type definitions for Screeps Arena",
   "main": "src/index.d.ts",
   "types": "src/index.d.ts",
